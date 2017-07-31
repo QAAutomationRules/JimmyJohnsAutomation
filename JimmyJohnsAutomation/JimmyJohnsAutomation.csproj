@@ -86,6 +86,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Data\Order.cs" />
     <Compile Include="Data\Person.cs" />
     <Compile Include="Features\CreateAccount.feature.cs">
       <AutoGen>True</AutoGen>

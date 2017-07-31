@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using JimmyJohnsAutomation.WebDriverExtensions;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 
@@ -47,7 +48,7 @@ namespace JimmyJohnsAutomation.Pages
         public LoginPage GoToLoginPage()
         {
             LoginButton.Click();
-
+            
             return new LoginPage(this.Driver);
         }
 

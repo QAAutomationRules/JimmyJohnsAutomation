@@ -17,7 +17,8 @@ namespace JimmyJohnsAutomation.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.2.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("PersonDataContextInjection", Description="\tAs a math idiot\r\n\tI want to be told the sum of two numbers", SourceFile="Features\\PersonDataContextInjection.feature", SourceLine=0)]
+    [TechTalk.SpecRun.FeatureAttribute("PersonDataContextInjection", Description="\tAs a QA Automation person\r\n\tI want to see an example of how to use context injec" +
+        "tion", SourceFile="Features\\PersonDataContextInjection.feature", SourceLine=0)]
     public partial class PersonDataContextInjectionFeature
     {
         
@@ -30,7 +31,8 @@ namespace JimmyJohnsAutomation.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "PersonDataContextInjection", "\tAs a math idiot\r\n\tI want to be told the sum of two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "PersonDataContextInjection", "\tAs a QA Automation person\r\n\tI want to see an example of how to use context injec" +
+                    "tion", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -61,11 +63,11 @@ namespace JimmyJohnsAutomation.Features
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Get Name from Context Injection Data", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Use Context Injection Data to create a Jimmy Johns Account", new string[] {
                 "TestContextInjection"}, SourceLine=6)]
-        public virtual void GetNameFromContextInjectionData()
+        public virtual void UseContextInjectionDataToCreateAJimmyJohnsAccount()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get Name from Context Injection Data", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Use Context Injection Data to create a Jimmy Johns Account", new string[] {
                         "TestContextInjection"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
@@ -77,6 +79,26 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.And("I go to the Create account page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 11
  testRunner.Then("the First Name and Last Name may be shared", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Use Context Injection Data to Populate Phone Field on Create Account Page", new string[] {
+                "TestContextInjection"}, SourceLine=14)]
+        public virtual void UseContextInjectionDataToPopulatePhoneFieldOnCreateAccountPage()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Use Context Injection Data to Populate Phone Field on Create Account Page", new string[] {
+                        "TestContextInjection"});
+#line 15
+this.ScenarioSetup(scenarioInfo);
+#line 16
+ testRunner.Given("I have a phone number \"\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 17
+ testRunner.And("I go to the Jimmy John Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 18
+ testRunner.And("I go to the Create account page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 19
+ testRunner.Then("the phone number is added to the phone number field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
