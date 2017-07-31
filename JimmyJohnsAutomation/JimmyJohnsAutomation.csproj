@@ -118,6 +118,7 @@
     <Compile Include="Steps\CreateAccountSteps.cs" />
     <Compile Include="Steps\NavigationSteps.cs" />
     <Compile Include="Steps\PersonContextInjectionSteps.cs" />
+    <Compile Include="Steps\PhoneContextInjection.cs" />
     <Compile Include="WebDriverExtensions\WebDriverExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
