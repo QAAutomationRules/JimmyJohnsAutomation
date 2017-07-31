@@ -1,0 +1,47 @@
+﻿VS filter: testpath:TestAssembly:JimmyJohnsAutomation/Feature:PersonDataContextInjection/Scenario:Get+Name+from+Context+Injection+Data
+Discovering target: Default
+Discovering tests from assembly: c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\JimmyJohnsAutomation.dll
+Appdomain Disposed
+Test Suite Dump
+#0: JimmyJohnsAutomation/Default - 
+#1: Default - 
+#2: JimmyJohnsAutomation - 
+#8: PersonDataContextInjection - 
+#9: Get Name from Context Injection Data - TestAssembly:JimmyJohnsAutomation/Feature:PersonDataContextInjection/Scenario:Get+Name+from+Context+Injection+Data
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #9 from normal test queue 
+Thread#0:Scheduler: considering testitem #9 for thread 0
+Thread#0:TestItem#9:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#9:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#9:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #9 for thread 0
+Thread#0:Scheduler: Test #9 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for JimmyJohnsAutomation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\Ktice\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.6.0\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #9/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I have a first name "Jimmy" and a last name "Johns"
+Thread#0:T:done: PersonContextInjectionSteps.GivenIHaveAFirstNameAndALastName("Jimmy", "Johns") (0.0s)
+Thread#0:B:And I go to the Jimmy John Home Page
+Thread#0:T:done: NavigationSteps.GivenIGoToTheJimmyJohnHomePage() (4.8s)
+Thread#0:B:And I go to the Create account page
+Thread#0:T:done: NavigationSteps.GivenIGoToTheCreateAccountPage() (4.2s)
+Thread#0:B:Then the First Name and Last Name may be shared
+Thread#0:T:done: PersonContextInjectionSteps.ThenTheFirstNameAndLastNameMayBeShared() (3.5s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #9/0 is finished on thread #0 as Succeeded within 19.2089207 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0

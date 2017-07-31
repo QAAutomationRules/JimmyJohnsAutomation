@@ -7,6 +7,7 @@ using TechTalk.SpecFlow;
 using Faker;
 using OpenQA.Selenium.Support.UI;
 using Faker.Extensions;
+using JimmyJohnsAutomation.Data;
 using JimmyJohnsAutomation.WebDriverExtensions;
 using JimmyJohnsAutomation.Pages;
 
