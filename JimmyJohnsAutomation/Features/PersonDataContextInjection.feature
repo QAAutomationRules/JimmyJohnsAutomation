@@ -13,7 +13,7 @@ Scenario: Use Context Injection Data to create a Jimmy Johns Account
 
 @TestContextInjection
 Scenario: Use Context Injection Data to Populate Phone Field on Create Account Page
-	Given I have a phone number ""
+	Given I have a phone number "3039229911"
 	And I go to the Jimmy John Home Page
 	And I go to the Create account page
 	Then the phone number is added to the phone number field

@@ -87,6 +87,5 @@ c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\en-US\Faker.Portabl
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\it-IT\Faker.Portable.resources.dll
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\nb-NO\Faker.Portable.resources.dll
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\pt-BR\Faker.Portable.resources.dll
-c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\obj\Debug\JimmyJohnsAutomation.csprojResolveAssemblyReference.cache
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\obj\Debug\JimmyJohnsAutomation.dll
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\obj\Debug\JimmyJohnsAutomation.pdb
