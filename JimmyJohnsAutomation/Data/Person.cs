@@ -58,7 +58,7 @@ namespace JimmyJohnsAutomation.Data
                     .With(c => c.LastName = Faker.Name.Last())
                     .With(c => c.TelephoneNumber = phone)
                     .With(c => c.EmailAddress = Faker.Internet.Email())
-                    .With(c => c.Password = Faker.Beer.Name() + Faker.RandomNumber.Next(0000,9999))
+                    .With(c => c.Password = Faker.Beer.Name())
                 .Build();
 
             return person;
@@ -91,8 +91,10 @@ namespace JimmyJohnsAutomation.Data
                     .With(c => c.LastName = Faker.Name.Last())
                     .With(c => c.TelephoneNumber = phone)
                     .With(c => c.EmailAddress = Faker.Internet.Email())
-                    .With(c => c.Password = Faker.Beer.Name() + Faker.RandomNumber.Next(0000, 9999))
+                    .With(c => c.Password = Faker.Beer.Name())
                 .Build();
+
+            
 
             return person;
         }
