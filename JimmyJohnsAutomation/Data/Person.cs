@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Faker;
 using FizzWare.NBuilder;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ploeh.AutoFixture;
@@ -32,10 +33,28 @@ namespace JimmyJohnsAutomation.Data
 
         public static PersonData GetPersonData()
         {
+            string phone = Phone.Number();
+            if (phone.Substring(0, 2).Equals("1-"))
+            {
+                phone = phone.Substring(2, phone.Length - 2);
+            }
+            if (phone.Contains("x"))
+            {
+                int index = phone.IndexOf("x");
+                phone = phone.Remove(index - 1);
+            }
+            phone = phone.Replace(".", "");
+            phone = phone.Replace("-", "");
+            phone = phone.Replace("(", "");
+            phone = phone.Replace(")", "");
+            phone = phone.Replace(" ", "");
+
+            //NBuilder stuff
+
             var person = Builder<PersonData>.CreateNew()
                 .With(c => c.FirstName = Faker.Name.First())
                     .With(c => c.LastName = Faker.Name.Last())
-                    .With(c => c.TelephoneNumber = Faker.Phone.Number())
+                    .With(c => c.TelephoneNumber = phone)
                     .With(c => c.EmailAddress = Faker.Internet.Email())
                 .Build();
 

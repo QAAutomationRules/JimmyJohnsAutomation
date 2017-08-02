@@ -20,10 +20,12 @@ namespace JimmyJohnsAutomation.Steps
         [When(@"I create a new account with an NBuilder Person")]
         public void WhenICreateANewAccountWithAnNBuilderPerson()
         {
+
             CreateAccountPage createAccountPage = new CreateAccountPage(driver);
             createAccountPage.FirstNameTextBox.SetText(Data.GenerateData.GetPersonData().FirstName);
             createAccountPage.LastNameTextBox.SetText(Data.GenerateData.GetPersonData().LastName);
             createAccountPage.EmailTextBox.SetText(Data.GenerateData.GetPersonData().EmailAddress);
+            createAccountPage.ConfirmEmailTextBox.SetText(Data.GenerateData.GetPersonData().EmailAddress);
             createAccountPage.PhoneNumberTextBox.SetText(Data.GenerateData.GetPersonData().TelephoneNumber);
         }
 
