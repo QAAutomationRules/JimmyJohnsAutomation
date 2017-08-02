@@ -10,6 +10,8 @@ using Faker.Extensions;
 using JimmyJohnsAutomation.Data;
 using JimmyJohnsAutomation.WebDriverExtensions;
 using JimmyJohnsAutomation.Pages;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Protractor;
 
 namespace JimmyJohnsAutomation.Steps
 {
@@ -80,8 +82,7 @@ namespace JimmyJohnsAutomation.Steps
         {
             //IWebElement StartAnOrderText = 
             //    driver.FindElement(By.XPath("//h1[contains(text(),'Start an Order')]"));
-
-
+            
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
             wait.Until(ExpectedConditions.ElementExists(By.XPath("//h1[contains(text(),'Start an Order')]")));
         }

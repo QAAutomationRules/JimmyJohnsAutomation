@@ -1,0 +1,47 @@
+﻿VS filter: testpath:TestAssembly:JimmyJohnsAutomation/Feature:PersonDataContextInjection/Scenario:Use+Context+Injection+Data+to+Populate+Phone+Field+on+Create+Account+Page
+Discovering target: Default
+Discovering tests from assembly: C:\GitTastic\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\JimmyJohnsAutomation.dll
+Appdomain Disposed
+Test Suite Dump
+#0: JimmyJohnsAutomation/Default - 
+#1: Default - 
+#2: JimmyJohnsAutomation - 
+#8: PersonDataContextInjection - 
+#10: Use Context Injection Data to Populate Phone Field on Create Account Page - TestAssembly:JimmyJohnsAutomation/Feature:PersonDataContextInjection/Scenario:Use+Context+Injection+Data+to+Populate+Phone+Field+on+Create+Account+Page
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #10 from normal test queue 
+Thread#0:Scheduler: considering testitem #10 for thread 0
+Thread#0:TestItem#10:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#10:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#10:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #10 for thread 0
+Thread#0:Scheduler: Test #10 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for JimmyJohnsAutomation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\Ktice\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.6.0\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #10/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I have a phone number "3039229911"
+Thread#0:T:done: PhoneContextInjection.GivenIHaveAPhoneNumber("3039229911") (0.0s)
+Thread#0:B:And I go to the Jimmy John Home Page
+Thread#0:T:done: NavigationSteps.GivenIGoToTheJimmyJohnHomePage() (3.4s)
+Thread#0:B:And I go to the Create account page
+Thread#0:T:done: NavigationSteps.GivenIGoToTheCreateAccountPage() (43.8s)
+Thread#0:B:Then the phone number is added to the phone number field
+Thread#0:T:done: PhoneContextInjection.ThenThePhoneNumberIsAddedToThePhoneNumberField() (1.8s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #10/0 is finished on thread #0 as Succeeded within 55.7318685 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0
