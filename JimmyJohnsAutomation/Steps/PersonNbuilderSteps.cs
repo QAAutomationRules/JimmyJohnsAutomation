@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using JimmyJohnsAutomation.Data;
 using JimmyJohnsAutomation.WebDriverExtensions;
 using OpenQA.Selenium;
 using TechTalk.SpecFlow;
@@ -20,13 +21,16 @@ namespace JimmyJohnsAutomation.Steps
         [When(@"I create a new account with an NBuilder Person")]
         public void WhenICreateANewAccountWithAnNBuilderPerson()
         {
-            string email = Data.GenerateData.GetPersonData().EmailAddress;
-            string password = Data.GenerateData.GetPersonData().Password;
+
+            PersonData pdata = Data.GenerateData.GetPersonData();
+
+            string email = pdata.EmailAddress;
+            string password = pdata.Password;
 
             CreateAccountPage createAccountPage = new CreateAccountPage(driver);
-            createAccountPage.FirstNameTextBox.SetText(Data.GenerateData.GetPersonData().FirstName);
-            createAccountPage.LastNameTextBox.SetText(Data.GenerateData.GetPersonData().LastName);
-            createAccountPage.PhoneNumberTextBox.SetText(Data.GenerateData.GetPersonData().TelephoneNumber);
+            createAccountPage.FirstNameTextBox.SetText(pdata.FirstName);
+            createAccountPage.LastNameTextBox.SetText(pdata.LastName);
+            createAccountPage.PhoneNumberTextBox.SetText(pdata.TelephoneNumber);
             createAccountPage.EmailTextBox.SetText(email);
             createAccountPage.ConfirmEmailTextBox.SetText(email);
             createAccountPage.PasswordTextBox.SetText(password);
