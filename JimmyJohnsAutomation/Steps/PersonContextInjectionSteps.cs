@@ -7,6 +7,7 @@ using JimmyJohnsAutomation.Pages;
 using JimmyJohnsAutomation.WebDriverExtensions;
 using TechTalk.SpecFlow;
 using OpenQA.Selenium;
+using Microsoft.VisualStudio.QualityTools.UnitTestFramework;
 
 namespace JimmyJohnsAutomation.Steps
 {
@@ -35,6 +36,9 @@ namespace JimmyJohnsAutomation.Steps
         [Then(@"the First Name and Last Name may be shared")]
         public void ThenTheFirstNameAndLastNameMayBeShared()
         {
+
+            
+
             CreateAccountPage createAccountPage = new CreateAccountPage(driver);
             createAccountPage.FirstNameTextBox.SetText(personData.FirstName);
             createAccountPage.LastNameTextBox.SetText(personData.LastName);

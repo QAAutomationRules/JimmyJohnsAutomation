@@ -48,7 +48,7 @@ namespace JimmyJohnsAutomation.Pages
 
         public LoginPage GoToLoginPage()
         {
-            LoginButton.Displayed.Should().Be(true);
+            LoginButton.Displayed.Should().BeTrue();
             LoginButton.Click();
 
             return new LoginPage(this.Driver);

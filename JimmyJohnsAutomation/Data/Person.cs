@@ -21,6 +21,8 @@ namespace JimmyJohnsAutomation.Data
 
         public string TelephoneNumber { get; set; }
 
+        public string Password { get; set; }
+
     }
 
     public class PhoneData
@@ -52,10 +54,11 @@ namespace JimmyJohnsAutomation.Data
             //NBuilder stuff
 
             var person = Builder<PersonData>.CreateNew()
-                .With(c => c.FirstName = Faker.Name.First())
+                    .With(c => c.FirstName = Faker.Name.First())
                     .With(c => c.LastName = Faker.Name.Last())
                     .With(c => c.TelephoneNumber = phone)
                     .With(c => c.EmailAddress = Faker.Internet.Email())
+                    .With(c => c.Password = Faker.Beer.Name() + "Blah399")
                 .Build();
 
             return person;

@@ -131,3 +131,4 @@ C:\GitTastic\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Ploeh.AutoFixtu
 C:\GitTastic\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Protractor.pdb
 C:\GitTastic\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Protractor.xml
 C:\GitTastic\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\FizzWare.NBuilder.dll
+C:\GitTastic\JimmyJohnsAutomation\JimmyJohnsAutomation\obj\Debug\JimmyJohnsAutomation.csprojResolveAssemblyReference.cache
