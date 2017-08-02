@@ -21,7 +21,7 @@ namespace JimmyJohnsAutomation.Steps
         [When(@"I create a new account with an NBuilder Person")]
         public void WhenICreateANewAccountWithAnNBuilderPerson()
         {
-
+            IList<PersonData> listPData = Data.GenerateData.GetListOfPersonData();
             PersonData pdata = Data.GenerateData.GetPersonData();
 
             string email = pdata.EmailAddress;

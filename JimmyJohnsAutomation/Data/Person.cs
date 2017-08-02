@@ -63,5 +63,39 @@ namespace JimmyJohnsAutomation.Data
 
             return person;
         }
+
+
+        public static IList<PersonData> GetListOfPersonData()
+        {
+            string phone = Phone.Number();
+            if (phone.Substring(0, 2).Equals("1-"))
+            {
+                phone = phone.Substring(2, phone.Length - 2);
+            }
+            if (phone.Contains("x"))
+            {
+                int index = phone.IndexOf("x");
+                phone = phone.Remove(index - 1);
+            }
+            phone = phone.Replace(".", "");
+            phone = phone.Replace("-", "");
+            phone = phone.Replace("(", "");
+            phone = phone.Replace(")", "");
+            phone = phone.Replace(" ", "");
+
+            //NBuilder stuff
+
+            var person = Builder<PersonData>.CreateListOfSize(100)
+                .All()
+                    .With(c => c.FirstName = Faker.Name.First())
+                    .With(c => c.LastName = Faker.Name.Last())
+                    .With(c => c.TelephoneNumber = phone)
+                    .With(c => c.EmailAddress = Faker.Internet.Email())
+                    .With(c => c.Password = Faker.Beer.Name() + Faker.RandomNumber.Next(0000, 9999))
+                .Build();
+
+            return person;
+        }
+
     }
 }
