@@ -21,22 +21,8 @@ namespace JimmyJohnsAutomation.Steps
         [When(@"I create a new account with an NBuilder Person")]
         public void WhenICreateANewAccountWithAnNBuilderPerson()
         {
-            IList<PersonData> listPData = Data.GenerateData.GetListOfPersonData();
-            PersonData pdata = Data.GenerateData.GetPersonData();
-
-            string email = pdata.EmailAddress;
-            string password = pdata.Password;
-
             CreateAccountPage createAccountPage = new CreateAccountPage(driver);
-            createAccountPage.FirstNameTextBox.SetText(pdata.FirstName);
-            createAccountPage.LastNameTextBox.SetText(pdata.LastName);
-            createAccountPage.PhoneNumberTextBox.SetText(pdata.TelephoneNumber);
-            createAccountPage.EmailTextBox.SetText(email);
-            createAccountPage.ConfirmEmailTextBox.SetText(email);
-            createAccountPage.PasswordTextBox.SetText(password);
-            createAccountPage.PasswordConfirmTextBox.SetText(password);
-            createAccountPage.TermsAndConditionsCheckBox.SetCheckbox(true);
-            createAccountPage.CreateAccountButton.Click();
+            createAccountPage.CreateAccount();
         }
 
     }

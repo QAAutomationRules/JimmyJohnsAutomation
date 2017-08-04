@@ -30,7 +30,7 @@ namespace JimmyJohnsAutomation.Data
         public string Phone { get; set; }
     }
 
-    public static class GenerateData
+    public class GenerateData
     {
 
         public static PersonData GetPersonData()
@@ -58,7 +58,7 @@ namespace JimmyJohnsAutomation.Data
                     .With(c => c.LastName = Faker.Name.Last())
                     .With(c => c.TelephoneNumber = phone)
                     .With(c => c.EmailAddress = Faker.Internet.Email())
-                    .With(c => c.Password = Faker.Beer.Name())
+                    .With(c => c.Password = Faker.Beer.Name() + "1")
                 .Build();
 
             return person;
