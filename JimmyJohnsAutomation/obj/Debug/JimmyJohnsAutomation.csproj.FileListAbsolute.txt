@@ -132,3 +132,16 @@ C:\GitTastic\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Protractor.pdb
 C:\GitTastic\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Protractor.xml
 C:\GitTastic\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\FizzWare.NBuilder.dll
 C:\GitTastic\JimmyJohnsAutomation\JimmyJohnsAutomation\obj\Debug\JimmyJohnsAutomation.csprojResolveAssemblyReference.cache
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\FizzWare.NBuilder.dll
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\FluentAssertions.Core.dll
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\FluentAssertions.dll
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Ploeh.AutoFixture.dll
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Protractor.dll
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\FluentAssertions.pdb
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\FluentAssertions.xml
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\FluentAssertions.Core.pdb
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\FluentAssertions.Core.xml
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Ploeh.AutoFixture.xml
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Protractor.pdb
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Protractor.xml
+C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\obj\Debug\JimmyJohnsAutomation.csprojResolveAssemblyReference.cache

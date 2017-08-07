@@ -109,11 +109,11 @@ this.FeatureBackground();
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Create a Jimmy Johns user account with NBuilder Data", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Add a Jimmy Johns user account with NBuilder Data", new string[] {
                 "SMOKE"}, SourceLine=23)]
-        public virtual void CreateAJimmyJohnsUserAccountWithNBuilderData()
+        public virtual void AddAJimmyJohnsUserAccountWithNBuilderData()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a Jimmy Johns user account with NBuilder Data", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a Jimmy Johns user account with NBuilder Data", new string[] {
                         "SMOKE"});
 #line 24
 this.ScenarioSetup(scenarioInfo);
@@ -124,6 +124,26 @@ this.FeatureBackground();
 #line 26
  testRunner.When("I create a new account with an NBuilder Person", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 27
+ testRunner.Then("the Jimmy John user is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Add a Jimmy Johns user account with NBuilder List Data", new string[] {
+                "SMOKE"}, SourceLine=30)]
+        public virtual void AddAJimmyJohnsUserAccountWithNBuilderListData()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a Jimmy Johns user account with NBuilder List Data", new string[] {
+                        "SMOKE"});
+#line 31
+this.ScenarioSetup(scenarioInfo);
+#line 6
+this.FeatureBackground();
+#line 32
+ testRunner.Given("I go to the Create account page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 33
+ testRunner.When("I create a new account with NBuilder List of Person Data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 34
  testRunner.Then("the Jimmy John user is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

@@ -85,16 +85,15 @@ namespace JimmyJohnsAutomation.Data
 
             //NBuilder stuff
 
-            var person = Builder<PersonData>.CreateListOfSize(100)
+            var person = Builder<PersonData>.CreateListOfSize(200)
                 .All()
                     .With(c => c.FirstName = Faker.Name.First())
                     .With(c => c.LastName = Faker.Name.Last())
+                    .With(c => c.MiddleName = Faker.Name.FullName())
                     .With(c => c.TelephoneNumber = phone)
                     .With(c => c.EmailAddress = Faker.Internet.Email())
                     .With(c => c.Password = Faker.Beer.Name())
-                .Build();
-
-            
+                .Build();            
 
             return person;
         }
@@ -119,15 +118,20 @@ namespace JimmyJohnsAutomation.Data
             phone = phone.Replace(" ", "");
 
             //NBuilder stuff
+            
+            //need to setup Datalayer for persisting data to a datalayer
+            //BuilderSetup.SetCreatePersistenceMethod<IList<PersonData>>(
+                //personRepository.CreateAll);
 
-            var person = Builder<PersonData>.CreateListOfSize(100)
-                .All()
+            var person = Builder<PersonData>.CreateListOfSize(200)
+                .TheFirst(150)
                     .With(c => c.FirstName = Faker.Name.First())
                     .With(c => c.LastName = Faker.Name.Last())
                     .With(c => c.TelephoneNumber = phone)
                     .With(c => c.EmailAddress = Faker.Internet.Email())
                     .With(c => c.Password = Faker.Beer.Name())
-                
+                 .TheLast(50)
+                    .With(c => c.EmailAddress = "specialemail@email.com")
                     //Persist the data object.
 
                     .Persist();

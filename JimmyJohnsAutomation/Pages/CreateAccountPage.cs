@@ -93,6 +93,25 @@ namespace JimmyJohnsAutomation.Pages
             CreateAccountButton.Click();
         }
 
+
+        public void CreateAccountWithNBuilderList()
+        {
+            IList<PersonData> pdata = Data.GenerateData.GetListOfPersonData();
+
+            string email = pdata[0].EmailAddress;
+            string password = pdata[0].Password;
+
+            FirstNameTextBox.SetText(pdata[0].FirstName);
+            LastNameTextBox.SetText(pdata[0].LastName);
+            PhoneNumberTextBox.SetText(pdata[0].TelephoneNumber);
+            EmailTextBox.SetText(email);
+            ConfirmEmailTextBox.SetText(email);
+            PasswordTextBox.SetText(password);
+            PasswordConfirmTextBox.SetText(password);
+            TermsAndConditionsCheckBox.SetCheckbox(true);
+            CreateAccountButton.Click();
+        }
+
         #endregion 
 
     }

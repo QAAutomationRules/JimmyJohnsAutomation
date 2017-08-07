@@ -21,7 +21,14 @@ Scenario: Navigate to Create user account
 
 
 @SMOKE
-Scenario: Create a Jimmy Johns user account with NBuilder Data
+Scenario: Add a Jimmy Johns user account with NBuilder Data
 	Given I go to the Create account page
 	When I create a new account with an NBuilder Person
+	Then the Jimmy John user is created
+
+
+@SMOKE
+Scenario: Add a Jimmy Johns user account with NBuilder List Data
+	Given I go to the Create account page
+	When I create a new account with NBuilder List of Person Data
 	Then the Jimmy John user is created

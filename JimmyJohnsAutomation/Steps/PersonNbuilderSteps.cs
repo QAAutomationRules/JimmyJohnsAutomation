@@ -25,5 +25,13 @@ namespace JimmyJohnsAutomation.Steps
             createAccountPage.CreateAccount();
         }
 
+
+        [When(@"I create a new account with NBuilder List of Person Data")]
+        public void WhenICreateANewAccountWithNBuilderListOfPersonData()
+        {
+            CreateAccountPage createAccountPage = new CreateAccountPage(driver);
+            createAccountPage.CreateAccountWithNBuilderList();
+        }
+
     }
 }
