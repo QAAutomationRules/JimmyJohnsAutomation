@@ -69,7 +69,6 @@ c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\JimmyJohnsAutomatio
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\JimmyJohnsAutomation.dll
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\JimmyJohnsAutomation.pdb
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\Faker.Portable.dll
-c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\Newtonsoft.Json.dll
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\SpecRun.SpecFlowPlugin.dll
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\TechTalk.SpecFlow.dll
@@ -81,7 +80,6 @@ c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\Faker.Portable.xml
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\Newtonsoft.Json.xml
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\WebDriver.xml
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\WebDriver.Support.xml
-c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\de-DE\Faker.Portable.resources.dll
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\en-US\Faker.Portable.resources.dll
 c:\jimmy\jimmyjohnsautomation\JimmyJohnsAutomation\bin\Debug\it-IT\Faker.Portable.resources.dll

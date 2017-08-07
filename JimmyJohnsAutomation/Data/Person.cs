@@ -93,6 +93,8 @@ namespace JimmyJohnsAutomation.Data
                     .With(c => c.TelephoneNumber = phone)
                     .With(c => c.EmailAddress = Faker.Internet.Email())
                     .With(c => c.Password = Faker.Beer.Name())
+                .TheLast(50)
+                    .With(c => c.EmailAddress = "specialemail@email.com")
                 .Build();            
 
             return person;

@@ -80,7 +80,7 @@ namespace JimmyJohnsAutomation.Pages
             PersonData pdata = Data.GenerateData.GetPersonData();
 
             string email = pdata.EmailAddress;
-            string password = pdata.Password;
+            string password = pdata.Password + "9";
 
             FirstNameTextBox.SetText(pdata.FirstName);
             LastNameTextBox.SetText(pdata.LastName);
@@ -99,7 +99,7 @@ namespace JimmyJohnsAutomation.Pages
             IList<PersonData> pdata = Data.GenerateData.GetListOfPersonData();
 
             string email = pdata[0].EmailAddress;
-            string password = pdata[0].Password;
+            string password = pdata[0].Password + "9";
 
             FirstNameTextBox.SetText(pdata[0].FirstName);
             LastNameTextBox.SetText(pdata[0].LastName);
