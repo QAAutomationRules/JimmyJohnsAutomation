@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Faker;
+using JimmyJohnsAutomation.WebDriverExtensions;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using JimmyJohnsAutomation.Data;
 
 namespace JimmyJohnsAutomation.Pages
 {
@@ -75,33 +77,19 @@ namespace JimmyJohnsAutomation.Pages
 
         public void CreateAccount()
         {
-            string email = Internet.Email();
-            string password = "BlahPassword6";
+            PersonData pdata = Data.GenerateData.GetPersonData();
 
-            string phone = Phone.Number();
-            if (phone.Substring(0, 2).Equals("1-"))
-            {
-                phone = phone.Substring(2, phone.Length - 2);
-            }
-            if (phone.Contains("x"))
-            {
-                int index = phone.IndexOf("x");
-                phone = phone.Remove(index - 1);
-            }
-            phone = phone.Replace(".", "");
-            phone = phone.Replace("-", "");
-            phone = phone.Replace("(", "");
-            phone = phone.Replace(")", "");
-            phone = phone.Replace(" ", "");
+            string email = pdata.EmailAddress;
+            string password = pdata.Password;
 
-            FirstNameTextBox.SendKeys(Name.First());
-            LastNameTextBox.SendKeys(Name.Last());
-            PhoneNumberTextBox.SendKeys(phone);
-            EmailTextBox.SendKeys(email);
-            ConfirmEmailTextBox.SendKeys(email);
-            PasswordTextBox.SendKeys(password);
-            PasswordConfirmTextBox.SendKeys(password);
-            TermsAndConditionsCheckBox.Click();
+            FirstNameTextBox.SetText(pdata.FirstName);
+            LastNameTextBox.SetText(pdata.LastName);
+            PhoneNumberTextBox.SetText(pdata.TelephoneNumber);
+            EmailTextBox.SetText(email);
+            ConfirmEmailTextBox.SetText(email);
+            PasswordTextBox.SetText(password);
+            PasswordConfirmTextBox.SetText(password);
+            TermsAndConditionsCheckBox.SetCheckbox(true);
             CreateAccountButton.Click();
         }
 

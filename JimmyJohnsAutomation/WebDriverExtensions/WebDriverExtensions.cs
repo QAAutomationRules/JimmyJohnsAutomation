@@ -9,6 +9,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using Ploeh.AutoFixture;
+using Protractor;
 
 namespace JimmyJohnsAutomation.WebDriverExtensions
 {
@@ -520,6 +522,21 @@ namespace JimmyJohnsAutomation.WebDriverExtensions
             p.StandardOutput.ReadToEnd();
             p.WaitForExit();
         }
+
+
+        public static void GetAngularJSElement(this IWebDriver driver)
+        {
+
+
+
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+            wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//h1[contains(text(),'Start an Order')]")));
+
+
+        }
+
+
+        
 
     }
 }

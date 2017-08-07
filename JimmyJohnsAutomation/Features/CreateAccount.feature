@@ -18,3 +18,10 @@ Scenario: Navigate to Create user account
 	Given I go to the Login Page
 	When I click on the Create Account Link
 	Then I view the Create Account Page
+
+
+@SMOKE
+Scenario: Create a Jimmy Johns user account with NBuilder Data
+	Given I go to the Create account page
+	When I create a new account with an NBuilder Person
+	Then the Jimmy John user is created
