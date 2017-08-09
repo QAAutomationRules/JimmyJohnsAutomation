@@ -26,13 +26,13 @@ Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\
 Thread#0: Test #4/0 is started on thread #0
 Thread#0:T:-> Using app.config
 Thread#0:B:Given I go to the Jimmy John Home Page
-Thread#0:T:done: NavigationSteps.GivenIGoToTheJimmyJohnHomePage() (3.5s)
+Thread#0:T:done: NavigationSteps.GivenIGoToTheJimmyJohnHomePage() (4.7s)
 Thread#0:B:Given I go to the Create account page
-Thread#0:T:done: NavigationSteps.GivenIGoToTheCreateAccountPage() (5.4s)
+Thread#0:T:done: NavigationSteps.GivenIGoToTheCreateAccountPage() (9.1s)
 Thread#0:B:When I create a new account with a Page Object
-Thread#0:T:done: CreateAccountSteps.WhenICreateANewAccountWithAPageObject() (20.0s)
+Thread#0:T:done: CreateAccountSteps.WhenICreateANewAccountWithAPageObject() (23.5s)
 Thread#0:B:Then the Jimmy John user is created
-Thread#0:T:done: CreateAccountSteps.ThenTheJimmyJohnUserIsCreated() (1.0s)
+Thread#0:T:done: CreateAccountSteps.ThenTheJimmyJohnUserIsCreated() (1.2s)
 Thread#0:Scheduler: get next test for thread 0
 Thread#:Scheduler: testitem #6 from normal test queue 
 Thread#0:Scheduler: considering testitem #6 for thread 0
@@ -42,16 +42,16 @@ Thread#0:TestItem#6:runsOnOneOtherThreadUnspecific:False
 Thread#0:Scheduler: using testitem #6 for thread 0
 Thread#0:Scheduler: Test #6 is scheduled for thread
 Thread#0:Scheduler: with testItemExecutionIndex 0
-Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 38.9808977 seconds
+Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 49.855 seconds
 Thread#0: Test #6/0 is started on thread #0
 Thread#0:B:Given I go to the Jimmy John Home Page
-Thread#0:T:done: NavigationSteps.GivenIGoToTheJimmyJohnHomePage() (32.1s)
+Thread#0:T:done: NavigationSteps.GivenIGoToTheJimmyJohnHomePage() (4.4s)
 Thread#0:B:Given I go to the Create account page
-Thread#0:T:done: NavigationSteps.GivenIGoToTheCreateAccountPage() (5.9s)
+Thread#0:T:done: NavigationSteps.GivenIGoToTheCreateAccountPage() (6.3s)
 Thread#0:B:When I create a new account with an NBuilder Person
-Thread#0:T:done: PersonNbuilderSteps.WhenICreateANewAccountWithAnNBuilderPerson() (20.0s)
+Thread#0:T:done: PersonNbuilderSteps.WhenICreateANewAccountWithAnNBuilderPerson() (24.4s)
 Thread#0:B:Then the Jimmy John user is created
-Thread#0:T:done: CreateAccountSteps.ThenTheJimmyJohnUserIsCreated() (1.2s)
+Thread#0:T:done: CreateAccountSteps.ThenTheJimmyJohnUserIsCreated() (1.1s)
 Thread#0:Scheduler: get next test for thread 0
 Thread#:Scheduler: testitem #7 from normal test queue 
 Thread#0:Scheduler: considering testitem #7 for thread 0
@@ -61,16 +61,16 @@ Thread#0:TestItem#7:runsOnOneOtherThreadUnspecific:False
 Thread#0:Scheduler: using testitem #7 for thread 0
 Thread#0:Scheduler: Test #7 is scheduled for thread
 Thread#0:Scheduler: with testItemExecutionIndex 0
-Thread#0: Test #6/0 is finished on thread #0 as Succeeded within 68.2928286 seconds
+Thread#0: Test #6/0 is finished on thread #0 as Succeeded within 46.08 seconds
 Thread#0: Test #7/0 is started on thread #0
 Thread#0:B:Given I go to the Jimmy John Home Page
-Thread#0:T:done: NavigationSteps.GivenIGoToTheJimmyJohnHomePage() (3.9s)
+Thread#0:T:done: NavigationSteps.GivenIGoToTheJimmyJohnHomePage() (4.1s)
 Thread#0:B:Given I go to the Create account page
-Thread#0:T:done: NavigationSteps.GivenIGoToTheCreateAccountPage() (5.8s)
+Thread#0:T:done: NavigationSteps.GivenIGoToTheCreateAccountPage() (7.0s)
 Thread#0:B:When I create a new account with NBuilder List of Person Data
-Thread#0:T:done: PersonNbuilderSteps.WhenICreateANewAccountWithNBuilderListOfPersonData() (29.0s)
+Thread#0:T:done: PersonNbuilderSteps.WhenICreateANewAccountWithNBuilderListOfPersonData() (24.7s)
 Thread#0:B:Then the Jimmy John user is created
-Thread#0:T:done: CreateAccountSteps.ThenTheJimmyJohnUserIsCreated() (1.0s)
+Thread#0:T:done: CreateAccountSteps.ThenTheJimmyJohnUserIsCreated() (1.1s)
 Thread#0:Scheduler: get next test for thread 0
 Thread#:Scheduler: testitem #9 from normal test queue 
 Thread#0:Scheduler: considering testitem #9 for thread 0
@@ -80,19 +80,19 @@ Thread#0:TestItem#9:runsOnOneOtherThreadUnspecific:False
 Thread#0:Scheduler: using testitem #9 for thread 0
 Thread#0:Scheduler: Test #9 is scheduled for thread
 Thread#0:Scheduler: with testItemExecutionIndex 0
-Thread#0: Test #7/0 is finished on thread #0 as Succeeded within 48.70487 seconds
+Thread#0: Test #7/0 is finished on thread #0 as Succeeded within 46.953 seconds
 Thread#0: Test #9/0 is started on thread #0
 Thread#0:B:Given I go to the Jimmy John Home Page
-Thread#0:T:done: NavigationSteps.GivenIGoToTheJimmyJohnHomePage() (3.9s)
+Thread#0:T:done: NavigationSteps.GivenIGoToTheJimmyJohnHomePage() (4.0s)
 Thread#0:B:When I use the menu to navigate to the Menu Page
-Thread#0:T:done: NavigationSteps.WhenIUseTheMenuToNavigateToTheMenuPage() (3.0s)
+Thread#0:T:done: NavigationSteps.WhenIUseTheMenuToNavigateToTheMenuPage() (3.2s)
 Thread#0:B:Then the Menu Page is displayed
 Thread#0:T:done: NavigationSteps.ThenTheMenuPageIsDisplayed() (0.7s)
 Thread#0:Scheduler: get next test for thread 0
 Thread#:Scheduler: at the end of normal test queue
 Thread#0:Scheduler: enumerator for thread is at end
 Thread#0:Scheduler: No more tests for thread
-Thread#0: Test #9/0 is finished on thread #0 as Succeeded within 17.4507449 seconds
+Thread#0: Test #9/0 is finished on thread #0 as Succeeded within 15.799 seconds
 Appdomain Disposed
 Thread#-1:Scheduler: get next test for thread -1
 Thread#:Scheduler: at the end of normal test queue

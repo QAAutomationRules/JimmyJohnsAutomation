@@ -143,5 +143,3 @@ C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Ploeh.AutoFixture.x
 C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Protractor.pdb
 C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Protractor.xml
 C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\obj\Debug\JimmyJohnsAutomation.csprojResolveAssemblyReference.cache
-C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\jimmy\JimmyJohnsAutomation\JimmyJohnsAutomation\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
